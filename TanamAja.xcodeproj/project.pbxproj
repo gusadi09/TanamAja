@@ -101,13 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				ECD68EC825F44AD900A00EC5 /* TanamAja.entitlements */,
-				ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */,
-				ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */,
-				ECD68E9325F44AA000A00EC5 /* ViewController.swift */,
-				ECD68E9525F44AA000A00EC5 /* Main.storyboard */,
-				ECD68E9825F44AA100A00EC5 /* Assets.xcassets */,
-				ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */,
-				ECD68E9D25F44AA100A00EC5 /* Info.plist */,
+				ECD68ECC25F44B9E00A00EC5 /* Base */,
+				ECD68ED425F44C1F00A00EC5 /* Model */,
+				ECD68ED025F44BBC00A00EC5 /* ViewController */,
+				ECD68ED125F44BD700A00EC5 /* View */,
 			);
 			path = TanamAja;
 			sourceTree = "<group>";
@@ -128,6 +125,57 @@
 				ECD68EB325F44AA200A00EC5 /* Info.plist */,
 			);
 			path = TanamAjaUITests;
+			sourceTree = "<group>";
+		};
+		ECD68ECC25F44B9E00A00EC5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */,
+				ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */,
+				ECD68E9825F44AA100A00EC5 /* Assets.xcassets */,
+				ECD68E9D25F44AA100A00EC5 /* Info.plist */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ECD68ED025F44BBC00A00EC5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68ED525F44C2B00A00EC5 /* SplashScreen */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ECD68ED125F44BD700A00EC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E9525F44AA000A00EC5 /* Main.storyboard */,
+				ECD68ED225F44BE000A00EC5 /* LaunchScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECD68ED225F44BE000A00EC5 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		ECD68ED425F44C1F00A00EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECD68ED525F44C2B00A00EC5 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E9325F44AA000A00EC5 /* ViewController.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
+		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
+		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
+		ECD68E9725F44AA000A00EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD68E9525F44AA000A00EC5 /* Main.storyboard */; };
+		ECD68E9925F44AA100A00EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD68E9825F44AA100A00EC5 /* Assets.xcassets */; };
+		ECD68E9C25F44AA100A00EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */; };
+		ECD68EA725F44AA200A00EC5 /* TanamAjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68EA625F44AA200A00EC5 /* TanamAjaTests.swift */; };
+		ECD68EB225F44AA200A00EC5 /* TanamAjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68EB125F44AA200A00EC5 /* TanamAjaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECD68EA325F44AA200A00EC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD68E8425F44AA000A00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD68E8B25F44AA000A00EC5;
+			remoteInfo = TanamAja;
+		};
+		ECD68EAE25F44AA200A00EC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD68E8425F44AA000A00EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD68E8B25F44AA000A00EC5;
+			remoteInfo = TanamAja;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECD68E9325F44AA000A00EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECD68E9625F44AA000A00EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECD68E9825F44AA100A00EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD68E9B25F44AA100A00EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECD68E9D25F44AA100A00EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD68EA225F44AA200A00EC5 /* TanamAjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanamAjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD68EA625F44AA200A00EC5 /* TanamAjaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamAjaTests.swift; sourceTree = "<group>"; };
+		ECD68EA825F44AA200A00EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD68EAD25F44AA200A00EC5 /* TanamAjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanamAjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD68EB125F44AA200A00EC5 /* TanamAjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamAjaUITests.swift; sourceTree = "<group>"; };
+		ECD68EB325F44AA200A00EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECD68E8925F44AA000A00EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68E9F25F44AA200A00EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68EAA25F44AA200A00EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECD68E8325F44AA000A00EC5 = {
+			isa = PBXGroup;
+			children = (
+				ECD68E8E25F44AA000A00EC5 /* TanamAja */,
+				ECD68EA525F44AA200A00EC5 /* TanamAjaTests */,
+				ECD68EB025F44AA200A00EC5 /* TanamAjaUITests */,
+				ECD68E8D25F44AA000A00EC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD68E8D25F44AA000A00EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E8C25F44AA000A00EC5 /* TanamAja.app */,
+				ECD68EA225F44AA200A00EC5 /* TanamAjaTests.xctest */,
+				ECD68EAD25F44AA200A00EC5 /* TanamAjaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD68E8E25F44AA000A00EC5 /* TanamAja */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */,
+				ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */,
+				ECD68E9325F44AA000A00EC5 /* ViewController.swift */,
+				ECD68E9525F44AA000A00EC5 /* Main.storyboard */,
+				ECD68E9825F44AA100A00EC5 /* Assets.xcassets */,
+				ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */,
+				ECD68E9D25F44AA100A00EC5 /* Info.plist */,
+			);
+			path = TanamAja;
+			sourceTree = "<group>";
+		};
+		ECD68EA525F44AA200A00EC5 /* TanamAjaTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68EA625F44AA200A00EC5 /* TanamAjaTests.swift */,
+				ECD68EA825F44AA200A00EC5 /* Info.plist */,
+			);
+			path = TanamAjaTests;
+			sourceTree = "<group>";
+		};
+		ECD68EB025F44AA200A00EC5 /* TanamAjaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68EB125F44AA200A00EC5 /* TanamAjaUITests.swift */,
+				ECD68EB325F44AA200A00EC5 /* Info.plist */,
+			);
+			path = TanamAjaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD68E8B25F44AA000A00EC5 /* TanamAja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD68EB625F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAja" */;
+			buildPhases = (
+				ECD68E8825F44AA000A00EC5 /* Sources */,
+				ECD68E8925F44AA000A00EC5 /* Frameworks */,
+				ECD68E8A25F44AA000A00EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TanamAja;
+			productName = TanamAja;
+			productReference = ECD68E8C25F44AA000A00EC5 /* TanamAja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECD68EA125F44AA200A00EC5 /* TanamAjaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD68EB925F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaTests" */;
+			buildPhases = (
+				ECD68E9E25F44AA200A00EC5 /* Sources */,
+				ECD68E9F25F44AA200A00EC5 /* Frameworks */,
+				ECD68EA025F44AA200A00EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD68EA425F44AA200A00EC5 /* PBXTargetDependency */,
+			);
+			name = TanamAjaTests;
+			productName = TanamAjaTests;
+			productReference = ECD68EA225F44AA200A00EC5 /* TanamAjaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECD68EAC25F44AA200A00EC5 /* TanamAjaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD68EBC25F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaUITests" */;
+			buildPhases = (
+				ECD68EA925F44AA200A00EC5 /* Sources */,
+				ECD68EAA25F44AA200A00EC5 /* Frameworks */,
+				ECD68EAB25F44AA200A00EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD68EAF25F44AA200A00EC5 /* PBXTargetDependency */,
+			);
+			name = TanamAjaUITests;
+			productName = TanamAjaUITests;
+			productReference = ECD68EAD25F44AA200A00EC5 /* TanamAjaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD68E8425F44AA000A00EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ECD68E8B25F44AA000A00EC5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					ECD68EA125F44AA200A00EC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ECD68E8B25F44AA000A00EC5;
+					};
+					ECD68EAC25F44AA200A00EC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ECD68E8B25F44AA000A00EC5;
+					};
+				};
+			};
+			buildConfigurationList = ECD68E8725F44AA000A00EC5 /* Build configuration list for PBXProject "TanamAja" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD68E8325F44AA000A00EC5;
+			productRefGroup = ECD68E8D25F44AA000A00EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD68E8B25F44AA000A00EC5 /* TanamAja */,
+				ECD68EA125F44AA200A00EC5 /* TanamAjaTests */,
+				ECD68EAC25F44AA200A00EC5 /* TanamAjaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD68E8A25F44AA000A00EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD68E9C25F44AA100A00EC5 /* LaunchScreen.storyboard in Resources */,
+				ECD68E9925F44AA100A00EC5 /* Assets.xcassets in Resources */,
+				ECD68E9725F44AA000A00EC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68EA025F44AA200A00EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68EAB25F44AA200A00EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD68E8825F44AA000A00EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
+				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
+				ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68E9E25F44AA200A00EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD68EA725F44AA200A00EC5 /* TanamAjaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD68EA925F44AA200A00EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD68EB225F44AA200A00EC5 /* TanamAjaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECD68EA425F44AA200A00EC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD68E8B25F44AA000A00EC5 /* TanamAja */;
+			targetProxy = ECD68EA325F44AA200A00EC5 /* PBXContainerItemProxy */;
+		};
+		ECD68EAF25F44AA200A00EC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD68E8B25F44AA000A00EC5 /* TanamAja */;
+			targetProxy = ECD68EAE25F44AA200A00EC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECD68E9525F44AA000A00EC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD68E9625F44AA000A00EC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD68E9B25F44AA100A00EC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECD68EB425F44AA200A00EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECD68EB525F44AA200A00EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD68EB725F44AA200A00EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECD68EB825F44AA200A00EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAja;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECD68EBA25F44AA200A00EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAjaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAjaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TanamAja.app/TanamAja";
+			};
+			name = Debug;
+		};
+		ECD68EBB25F44AA200A00EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAjaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAjaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TanamAja.app/TanamAja";
+			};
+			name = Release;
+		};
+		ECD68EBD25F44AA200A00EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAjaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAjaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TanamAja;
+			};
+			name = Debug;
+		};
+		ECD68EBE25F44AA200A00EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = TanamAjaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TerbangTinggi.TanamAjaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TanamAja;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD68E8725F44AA000A00EC5 /* Build configuration list for PBXProject "TanamAja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD68EB425F44AA200A00EC5 /* Debug */,
+				ECD68EB525F44AA200A00EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD68EB625F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD68EB725F44AA200A00EC5 /* Debug */,
+				ECD68EB825F44AA200A00EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD68EB925F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD68EBA25F44AA200A00EC5 /* Debug */,
+				ECD68EBB25F44AA200A00EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD68EBC25F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD68EBD25F44AA200A00EC5 /* Debug */,
+				ECD68EBE25F44AA200A00EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECD68E8425F44AA000A00EC5 /* Project object */;
+}

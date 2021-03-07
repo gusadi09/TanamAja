@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6C20B24BAA836FFA1A77AF /* Pods_TanamAja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3DB4EDD7A6635AE3D92DED /* Pods_TanamAja.framework */; };
+		8C18D5F744CE36BD53A76E1D /* Pods_TanamAjaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */; };
+		E4709C3EA54DD586610F8F41 /* Pods_TanamAja_TanamAjaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681960A18E6570164D7552D6 /* Pods_TanamAja_TanamAjaUITests.framework */; };
 		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
 		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
 		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
@@ -15,6 +18,17 @@
 		ECD68E9C25F44AA100A00EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD68E9A25F44AA100A00EC5 /* LaunchScreen.storyboard */; };
 		ECD68EA725F44AA200A00EC5 /* TanamAjaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68EA625F44AA200A00EC5 /* TanamAjaTests.swift */; };
 		ECD68EB225F44AA200A00EC5 /* TanamAjaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68EB125F44AA200A00EC5 /* TanamAjaUITests.swift */; };
+		ECD68EE225F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD68EE125F4ADF300A00EC5 /* GoogleService-Info.plist */; };
+		ECD68EE325F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD68EE125F4ADF300A00EC5 /* GoogleService-Info.plist */; };
+		ECD68EE425F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD68EE125F4ADF300A00EC5 /* GoogleService-Info.plist */; };
+		ECD68F0525F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0425F4B7F900A00EC5 /* Poppins-Bold.ttf */; };
+		ECD68F0625F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0425F4B7F900A00EC5 /* Poppins-Bold.ttf */; };
+		ECD68F0725F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0425F4B7F900A00EC5 /* Poppins-Bold.ttf */; };
+		ECD68F0F25F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */; };
+		ECD68F1025F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */; };
+		ECD68F1125F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */; };
+		ECD68F2525F4D2A100A00EC5 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */; };
+		ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050974F903662A27C72B532C /* Pods-TanamAjaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAjaTests.debug.xcconfig"; path = "Target Support Files/Pods-TanamAjaTests/Pods-TanamAjaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2F7468BBC2FC26F2DA2498 /* Pods-TanamAja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja.release.xcconfig"; path = "Target Support Files/Pods-TanamAja/Pods-TanamAja.release.xcconfig"; sourceTree = "<group>"; };
+		34F5E41D615023A315842FDC /* Pods-TanamAja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja.debug.xcconfig"; path = "Target Support Files/Pods-TanamAja/Pods-TanamAja.debug.xcconfig"; sourceTree = "<group>"; };
+		681960A18E6570164D7552D6 /* Pods_TanamAja_TanamAjaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAja_TanamAjaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4E2A0623169128580266EC /* Pods-TanamAjaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAjaTests.release.xcconfig"; path = "Target Support Files/Pods-TanamAjaTests/Pods-TanamAjaTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB3DB4EDD7A6635AE3D92DED /* Pods_TanamAja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88C6BF52F45FDC8508D5206 /* Pods-TanamAja-TanamAjaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAjaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +72,12 @@
 		ECD68EB125F44AA200A00EC5 /* TanamAjaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamAjaUITests.swift; sourceTree = "<group>"; };
 		ECD68EB325F44AA200A00EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD68EC825F44AD900A00EC5 /* TanamAja.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TanamAja.entitlements; sourceTree = "<group>"; };
+		ECD68EE125F4ADF300A00EC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECD68F0425F4B7F900A00EC5 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FDE429FB22F56718FE738795 /* Pods-TanamAja-TanamAjaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.release.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6C20B24BAA836FFA1A77AF /* Pods_TanamAja.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C18D5F744CE36BD53A76E1D /* Pods_TanamAjaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +101,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4709C3EA54DD586610F8F41 /* Pods_TanamAja_TanamAjaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C24F9B20F5E56600DAAA3BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB3DB4EDD7A6635AE3D92DED /* Pods_TanamAja.framework */,
+				681960A18E6570164D7552D6 /* Pods_TanamAja_TanamAjaUITests.framework */,
+				EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABE3C61BEA59D0980DAD422E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34F5E41D615023A315842FDC /* Pods-TanamAja.debug.xcconfig */,
+				2A2F7468BBC2FC26F2DA2498 /* Pods-TanamAja.release.xcconfig */,
+				D88C6BF52F45FDC8508D5206 /* Pods-TanamAja-TanamAjaUITests.debug.xcconfig */,
+				FDE429FB22F56718FE738795 /* Pods-TanamAja-TanamAjaUITests.release.xcconfig */,
+				050974F903662A27C72B532C /* Pods-TanamAjaTests.debug.xcconfig */,
+				8F4E2A0623169128580266EC /* Pods-TanamAjaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ECD68E8325F44AA000A00EC5 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +138,8 @@
 				ECD68EA525F44AA200A00EC5 /* TanamAjaTests */,
 				ECD68EB025F44AA200A00EC5 /* TanamAjaUITests */,
 				ECD68E8D25F44AA000A00EC5 /* Products */,
+				ABE3C61BEA59D0980DAD422E /* Pods */,
+				6C24F9B20F5E56600DAAA3BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,10 +186,12 @@
 		ECD68ECC25F44B9E00A00EC5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ECD68F0325F4B7E100A00EC5 /* Font */,
 				ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */,
 				ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */,
 				ECD68E9825F44AA100A00EC5 /* Assets.xcassets */,
 				ECD68E9D25F44AA100A00EC5 /* Info.plist */,
+				ECD68EE125F4ADF300A00EC5 /* GoogleService-Info.plist */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -141,6 +199,7 @@
 		ECD68ED025F44BBC00A00EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ECD68F2925F4D2FA00A00EC5 /* Authentication */,
 				ECD68ED525F44C2B00A00EC5 /* SplashScreen */,
 			);
 			path = ViewController;
@@ -151,6 +210,7 @@
 			children = (
 				ECD68E9525F44AA000A00EC5 /* Main.storyboard */,
 				ECD68ED225F44BE000A00EC5 /* LaunchScreen */,
+				ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +238,23 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
+		ECD68F0325F4B7E100A00EC5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68F0425F4B7F900A00EC5 /* Poppins-Bold.ttf */,
+				ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		ECD68F2925F4D2FA00A00EC5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECD68EB625F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAja" */;
 			buildPhases = (
+				A80C7B002452EE7CEB5AC937 /* [CP] Check Pods Manifest.lock */,
 				ECD68E8825F44AA000A00EC5 /* Sources */,
 				ECD68E8925F44AA000A00EC5 /* Frameworks */,
 				ECD68E8A25F44AA000A00EC5 /* Resources */,
+				197ACB22663E3F5B291142B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECD68EB925F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaTests" */;
 			buildPhases = (
+				6FF9E5E632C4F3964DE206AA /* [CP] Check Pods Manifest.lock */,
 				ECD68E9E25F44AA200A00EC5 /* Sources */,
 				ECD68E9F25F44AA200A00EC5 /* Frameworks */,
 				ECD68EA025F44AA200A00EC5 /* Resources */,
@@ -220,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECD68EBC25F44AA200A00EC5 /* Build configuration list for PBXNativeTarget "TanamAjaUITests" */;
 			buildPhases = (
+				0D085396A4A1F400A54327EF /* [CP] Check Pods Manifest.lock */,
 				ECD68EA925F44AA200A00EC5 /* Sources */,
 				ECD68EAA25F44AA200A00EC5 /* Frameworks */,
 				ECD68EAB25F44AA200A00EC5 /* Resources */,
+				61F7CF4EB8DFF5CAD3359624 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,8 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD68E9C25F44AA100A00EC5 /* LaunchScreen.storyboard in Resources */,
+				ECD68EE225F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */,
+				ECD68F0525F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */,
+				ECD68F0F25F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */,
 				ECD68E9925F44AA100A00EC5 /* Assets.xcassets in Resources */,
 				ECD68E9725F44AA000A00EC5 /* Main.storyboard in Resources */,
+				ECD68F2525F4D2A100A00EC5 /* MainView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD68F1025F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */,
+				ECD68EE325F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */,
+				ECD68F0625F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,16 +387,123 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD68F1125F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */,
+				ECD68EE425F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */,
+				ECD68F0725F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D085396A4A1F400A54327EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TanamAja-TanamAjaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		197ACB22663E3F5B291142B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61F7CF4EB8DFF5CAD3359624 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF9E5E632C4F3964DE206AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TanamAjaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A80C7B002452EE7CEB5AC937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TanamAja-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECD68E8825F44AA000A00EC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
 				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
 				ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */,
@@ -483,13 +679,14 @@
 		};
 		ECD68EB725F44AA200A00EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F5E41D615023A315842FDC /* Pods-TanamAja.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TanamAja/TanamAja.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M5M727687;
-				INFOPLIST_FILE = TanamAja/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TanamAja/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,13 +701,14 @@
 		};
 		ECD68EB825F44AA200A00EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2F7468BBC2FC26F2DA2498 /* Pods-TanamAja.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TanamAja/TanamAja.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M5M727687;
-				INFOPLIST_FILE = TanamAja/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TanamAja/Base/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +723,7 @@
 		};
 		ECD68EBA25F44AA200A00EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050974F903662A27C72B532C /* Pods-TanamAjaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +746,7 @@
 		};
 		ECD68EBB25F44AA200A00EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4E2A0623169128580266EC /* Pods-TanamAjaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +769,7 @@
 		};
 		ECD68EBD25F44AA200A00EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88C6BF52F45FDC8508D5206 /* Pods-TanamAja-TanamAjaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -589,6 +790,7 @@
 		};
 		ECD68EBE25F44AA200A00EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE429FB22F56718FE738795 /* Pods-TanamAja-TanamAjaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

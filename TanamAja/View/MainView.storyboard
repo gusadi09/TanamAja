@@ -61,7 +61,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-QF-ITu">
-                                <rect key="frame" x="20" y="303" width="115.5" height="28"/>
+                                <rect key="frame" x="20" y="303" width="124" height="28"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbY-YR-hBf" customClass="Checkmark" customModule="TanamAja" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -72,7 +72,7 @@
                                         <state key="normal" image="checkmark_empty"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lup-kK-ej6">
-                                        <rect key="frame" x="36" y="0.0" width="79.5" height="28"/>
+                                        <rect key="frame" x="36" y="0.0" width="88" height="28"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or login with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-Lo-NY3">
-                                <rect key="frame" x="20" y="409" width="280" height="16.5"/>
+                                <rect key="frame" x="20" y="409" width="280" height="20"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="dUF-cX-Fyy">
-                                <rect key="frame" x="85.5" y="435.5" width="149" height="60"/>
+                                <rect key="frame" x="85.5" y="439" width="149" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-mx-LmB">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -125,20 +125,23 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="IQh-NB-THl">
-                                <rect key="frame" x="35" y="510.5" width="250" height="28"/>
+                                <rect key="frame" x="20.5" y="514" width="279.5" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t Have a TanamAja Account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEh-E9-75s">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="217.5" height="31"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-sD-yhk">
-                                        <rect key="frame" x="201" y="0.0" width="49" height="28"/>
+                                        <rect key="frame" x="223.5" y="0.0" width="56" height="31"/>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="Green"/>
                                         </state>
+                                        <connections>
+                                            <action selector="moveToRegister:" destination="q7d-bf-jaE" eventType="touchUpInside" id="3lv-Wg-kPJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -174,27 +177,147 @@
                     <navigationItem key="navigationItem" id="XZC-gJ-5Bz"/>
                     <connections>
                         <outlet property="emailTextField" destination="C2H-gh-ddu" id="H3Z-Np-PnN"/>
+                        <outlet property="loginBtn" destination="e8H-Rv-BcW" id="f0F-OC-5gj"/>
                         <outlet property="passTextField" destination="6Kr-9a-ign" id="o2e-hm-Pgj"/>
+                        <segue destination="UZD-8p-E4c" kind="show" identifier="toRegister" id="oEv-EX-t8w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqz-Xx-ixh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366.875" y="-101.40845070422536"/>
+            <point key="canvasLocation" x="2364.375" y="-101.40845070422536"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="IWw-Jp-eEe">
             <objects>
-                <viewController id="UZD-8p-E4c" sceneMemberID="viewController">
+                <viewController id="UZD-8p-E4c" customClass="RegisterViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPy-AK-QLO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-4f-Ype" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="70" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DJC-37-aDU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-user"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="805-Ew-kcU" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="134" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="KiH-rq-Lzs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-mail"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBP-ZI-anb" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="198" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="83h-89-a5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="done" textContentType="tel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-phone"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mss-o7-oBh" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="262" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Azp-fw-k8n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-pass"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj6-sP-2w6">
+                                <rect key="frame" x="20" y="348" width="280" height="50"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0ks-T5-kt6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="15"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6C4-Xx-JH8">
+                                <rect key="frame" x="22" y="418" width="276" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already Have a TanamAja Account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyq-IW-CU4">
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="31"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-sD-0bv">
+                                        <rect key="frame" x="240" y="0.0" width="36" height="31"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" name="Green"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moveToLogin:" destination="UZD-8p-E4c" eventType="touchUpInside" id="oqH-D7-p16"/>
+                                            <action selector="moveToRegister:" destination="q7d-bf-jaE" eventType="touchUpInside" id="Y7E-95-hcL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fic-YJ-uMl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6C4-Xx-JH8" firstAttribute="top" secondItem="Nj6-sP-2w6" secondAttribute="bottom" constant="20" id="18J-Mm-Xef"/>
+                            <constraint firstItem="805-Ew-kcU" firstAttribute="top" secondItem="Fsa-4f-Ype" secondAttribute="bottom" constant="8" symbolic="YES" id="48J-VB-kWF"/>
+                            <constraint firstItem="6C4-Xx-JH8" firstAttribute="centerX" secondItem="Nj6-sP-2w6" secondAttribute="centerX" id="8gd-je-w6H"/>
+                            <constraint firstItem="FBP-ZI-anb" firstAttribute="top" secondItem="805-Ew-kcU" secondAttribute="bottom" constant="8" symbolic="YES" id="C03-b3-aDs"/>
+                            <constraint firstItem="mss-o7-oBh" firstAttribute="top" secondItem="FBP-ZI-anb" secondAttribute="bottom" constant="8" symbolic="YES" id="EW4-Tj-Pcj"/>
+                            <constraint firstItem="FBP-ZI-anb" firstAttribute="leading" secondItem="fic-YJ-uMl" secondAttribute="leading" constant="20" id="K8U-lP-GMJ"/>
+                            <constraint firstItem="fic-YJ-uMl" firstAttribute="trailing" secondItem="mss-o7-oBh" secondAttribute="trailing" constant="20" id="OJL-AI-Jc2"/>
+                            <constraint firstItem="fic-YJ-uMl" firstAttribute="trailing" secondItem="Fsa-4f-Ype" secondAttribute="trailing" constant="20" id="Pf2-QT-UOI"/>
+                            <constraint firstItem="Fsa-4f-Ype" firstAttribute="top" secondItem="fic-YJ-uMl" secondAttribute="top" constant="70" id="Rkq-Mu-fwt"/>
+                            <constraint firstItem="805-Ew-kcU" firstAttribute="leading" secondItem="fic-YJ-uMl" secondAttribute="leading" constant="20" id="UhN-5W-jtA"/>
+                            <constraint firstItem="mss-o7-oBh" firstAttribute="leading" secondItem="fic-YJ-uMl" secondAttribute="leading" constant="20" id="a9b-DK-82F"/>
+                            <constraint firstItem="Fsa-4f-Ype" firstAttribute="leading" secondItem="fic-YJ-uMl" secondAttribute="leading" constant="20" id="aPS-oT-4hk"/>
+                            <constraint firstItem="fic-YJ-uMl" firstAttribute="trailing" secondItem="Nj6-sP-2w6" secondAttribute="trailing" constant="20" id="gvY-ta-ly1"/>
+                            <constraint firstItem="fic-YJ-uMl" firstAttribute="trailing" secondItem="805-Ew-kcU" secondAttribute="trailing" constant="20" id="q24-aF-YiK"/>
+                            <constraint firstItem="fic-YJ-uMl" firstAttribute="trailing" secondItem="FBP-ZI-anb" secondAttribute="trailing" constant="20" id="t8g-Hw-4zC"/>
+                            <constraint firstItem="Nj6-sP-2w6" firstAttribute="top" secondItem="mss-o7-oBh" secondAttribute="bottom" constant="30" id="tUc-Jl-9Rn"/>
+                            <constraint firstItem="Nj6-sP-2w6" firstAttribute="leading" secondItem="fic-YJ-uMl" secondAttribute="leading" constant="20" id="vLe-Yp-ze6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fjt-dh-aru"/>
+                    <connections>
+                        <outlet property="emailTxtField" destination="805-Ew-kcU" id="nHF-A0-xCh"/>
+                        <outlet property="nameTxtField" destination="Fsa-4f-Ype" id="8G7-QH-cqH"/>
+                        <outlet property="passTxtField" destination="mss-o7-oBh" id="EZC-3V-4Vp"/>
+                        <outlet property="phoneTxtField" destination="FBP-ZI-anb" id="eZ5-Tf-yjH"/>
+                        <outlet property="registerBtn" destination="Nj6-sP-2w6" id="T0J-Zg-ctd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVf-Fz-sFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="-101"/>
+            <point key="canvasLocation" x="3159.375" y="-101.40845070422536"/>
         </scene>
     </scenes>
     <resources>
@@ -203,6 +326,8 @@
         <image name="checkmark_empty" width="37" height="37"/>
         <image name="ic-mail" width="21" height="17"/>
         <image name="ic-pass" width="20" height="23"/>
+        <image name="ic-phone" width="26.5" height="26.5"/>
+        <image name="ic-user" width="16" height="21"/>
         <image name="splashLogo" width="345" height="389"/>
         <namedColor name="Green">
             <color red="0.36399999260902405" green="0.74400001764297485" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

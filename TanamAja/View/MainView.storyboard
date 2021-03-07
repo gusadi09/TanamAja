@@ -17,27 +17,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hZj-mk-ipC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hZj-mk-ipC">
                                 <rect key="frame" x="95" y="20" width="130" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="FcH-Lc-FRb"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-gh-ddu">
-                                <rect key="frame" x="112" y="169" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-gh-ddu" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="168" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="j66-WZ-vxO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-mail"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-9a-ign">
-                                <rect key="frame" x="112" y="221" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Kr-9a-ign" customClass="DesignableTextField" customModule="TanamAja" customModuleProvider="target">
+                                <rect key="frame" x="20" y="239" width="280" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="now-x7-M8k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic-pass"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ra3-fg-5Os"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C2H-gh-ddu" firstAttribute="top" secondItem="hZj-mk-ipC" secondAttribute="bottom" constant="20" id="1Mh-UT-bRj"/>
+                            <constraint firstItem="Ra3-fg-5Os" firstAttribute="trailing" secondItem="hZj-mk-ipC" secondAttribute="trailing" constant="95" id="39s-W3-vd1"/>
+                            <constraint firstItem="6Kr-9a-ign" firstAttribute="leading" secondItem="Ra3-fg-5Os" secondAttribute="leading" constant="20" id="IEl-Na-m3R"/>
+                            <constraint firstItem="C2H-gh-ddu" firstAttribute="leading" secondItem="Ra3-fg-5Os" secondAttribute="leading" constant="20" id="UjG-0m-K0A"/>
+                            <constraint firstItem="hZj-mk-ipC" firstAttribute="leading" secondItem="Ra3-fg-5Os" secondAttribute="leading" constant="95" id="WGt-MU-nDg"/>
+                            <constraint firstItem="Ra3-fg-5Os" firstAttribute="trailing" secondItem="6Kr-9a-ign" secondAttribute="trailing" constant="20" id="nxW-SN-2DG"/>
+                            <constraint firstItem="Ra3-fg-5Os" firstAttribute="trailing" secondItem="C2H-gh-ddu" secondAttribute="trailing" constant="20" id="okg-Ow-hKK"/>
+                            <constraint firstItem="6Kr-9a-ign" firstAttribute="top" secondItem="C2H-gh-ddu" secondAttribute="bottom" constant="15" id="t7M-Bs-t2z"/>
+                            <constraint firstItem="hZj-mk-ipC" firstAttribute="top" secondItem="Ra3-fg-5Os" secondAttribute="top" constant="20" id="tAN-sA-00g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XZC-gJ-5Bz"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="C2H-gh-ddu" id="H3Z-Np-PnN"/>
+                        <outlet property="passTextField" destination="6Kr-9a-ign" id="o2e-hm-Pgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqz-Xx-ixh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +78,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic-mail" width="21" height="17"/>
+        <image name="ic-pass" width="20" height="23"/>
         <image name="splashLogo" width="345" height="389"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

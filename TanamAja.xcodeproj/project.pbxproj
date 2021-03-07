@@ -29,6 +29,8 @@
 		ECD68F1125F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */; };
 		ECD68F2525F4D2A100A00EC5 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */; };
 		ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */; };
+		ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F5225F4DF0A00A00EC5 /* Checkmark.swift */; };
+		ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		ECD68F0E25F4B81500A00EC5 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ECD68F5225F4DF0A00A00EC5 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		FDE429FB22F56718FE738795 /* Pods-TanamAja-TanamAjaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.release.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +160,7 @@
 		ECD68E8E25F44AA000A00EC5 /* TanamAja */ = {
 			isa = PBXGroup;
 			children = (
+				ECD68F5125F4DEFA00A00EC5 /* Component */,
 				ECD68EC825F44AD900A00EC5 /* TanamAja.entitlements */,
 				ECD68ECC25F44B9E00A00EC5 /* Base */,
 				ECD68ED425F44C1F00A00EC5 /* Model */,
@@ -253,6 +258,15 @@
 				ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		ECD68F5125F4DEFA00A00EC5 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68F5225F4DF0A00A00EC5 /* Checkmark.swift */,
+				ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +518,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
+				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
+				ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */,
 				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
 				ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */,

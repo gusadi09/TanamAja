@@ -31,6 +31,7 @@
 		ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */; };
 		ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F5225F4DF0A00A00EC5 /* Checkmark.swift */; };
 		ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */; };
+		ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68F7F25F5277B00A00EC5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECD68F5225F4DF0A00A00EC5 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
 		ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		ECD68F7F25F5277B00A00EC5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../Register/RegisterViewController.swift; sourceTree = "<group>"; };
 		FDE429FB22F56718FE738795 /* Pods-TanamAja-TanamAjaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.release.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,7 +257,8 @@
 		ECD68F2925F4D2FA00A00EC5 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */,
+				ECD68F7B25F5275400A00EC5 /* Login */,
+				ECD68F8425F5279E00A00EC5 /* Register */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -267,6 +270,22 @@
 				ECD68F5725F4DFBC00A00EC5 /* DesignableTextField.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		ECD68F7B25F5275400A00EC5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68F2A25F4D32200A00EC5 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ECD68F8425F5279E00A00EC5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ECD68F7F25F5277B00A00EC5 /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +538,7 @@
 			files = (
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
 				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
+				ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */,
 				ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */,
 				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,

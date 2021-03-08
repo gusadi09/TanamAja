@@ -75,4 +75,8 @@ class LoginViewController: UIViewController {
     @IBAction func moveToRegister(_ sender: UIButton) {
         performSegue(withIdentifier: "toRegister", sender: self)
     }
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "toHome", sender: self)
+    }
 }

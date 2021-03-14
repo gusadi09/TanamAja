@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        navigationItem.backButtonTitle = ""
+        navigationItem.backButtonTitle = " "
         dTaskTable.dataSource = self
         dTaskTable.delegate = self
         
@@ -33,9 +33,6 @@ class HomeViewController: UIViewController {
         tipsCollection.delegate = self
         
         tipsCollection.register(UINib(nibName: "TipsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "tipsCell")
-        
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -95,13 +92,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(identifier: "DetailTaskVC") as? DetailSubmissionViewController
+        performSegue(withIdentifier: "toDetailSub", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as? DetailSubmissionViewController
         
-        vc?.titleTxt = "Plant an Anti-pollutant Plants"
-        
-        navigationController?.pushViewController(vc!, animated: true)
+        if segue.identifier == "toDetailSub" {
+            dest?.titleTxt = "Plant an Anti-pollutant Plants"
+        }
     }
     
 }

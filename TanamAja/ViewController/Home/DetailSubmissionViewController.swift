@@ -20,16 +20,18 @@ class DetailSubmissionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        navigationItem.backButtonTitle = ""
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.navigationBar.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        navigationController?.navigationBar.isHidden = true
+        //navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func setupUI() {
@@ -75,5 +77,10 @@ class DetailSubmissionViewController: UIViewController {
     }
     
     @IBAction func addSubmissionPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "CameraVC") as? CameraViewController
+        
+        navigationController?.pushViewController(vc!, animated: true)
     }
 }

@@ -326,7 +326,7 @@
         <!--Home View Controller-->
         <scene sceneID="jKE-3k-Gt5">
             <objects>
-                <viewController id="FP7-Jr-9SQ" customClass="HomeViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="FP7-Jr-9SQ" customClass="HomeViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I60-X1-w6a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="730"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -494,6 +494,7 @@
                         <outlet property="scrollHomeView" destination="3kw-UJ-qj6" id="eIC-ZH-lIG"/>
                         <outlet property="tipsCollection" destination="fGg-de-Oor" id="u1h-4O-cGw"/>
                         <segue destination="CVH-XO-GbY" kind="show" identifier="toNotif" id="uox-zg-oqP"/>
+                        <segue destination="4jp-Sd-KKe" kind="show" identifier="toDetailSub" id="O2e-Ht-rh4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZF-G7-Xhw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -521,11 +522,11 @@
             <objects>
                 <viewController storyboardIdentifier="DetailTaskVC" id="4jp-Sd-KKe" customClass="DetailSubmissionViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ULC-L8-Y92">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0H-UO-95L">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjr-zo-sly">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="433"/>
@@ -610,6 +611,7 @@
                             <constraint firstItem="s0H-UO-95L" firstAttribute="leading" secondItem="biF-6A-aIk" secondAttribute="leading" id="zrJ-oC-cGD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="N63-jQ-1XS"/>
                     <connections>
                         <outlet property="addSubmissionBtn" destination="p69-u4-gYA" id="dNJ-dj-0RX"/>
                         <outlet property="descLbl" destination="Sa3-Ov-AZY" id="ayV-ey-058"/>
@@ -620,7 +622,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tB9-V0-4ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5191.875" y="1542.2535211267607"/>
+            <point key="canvasLocation" x="5192" y="1685"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="OLJ-Gt-zrB">
+            <objects>
+                <viewController storyboardIdentifier="CameraVC" id="ovr-Jk-maU" customClass="CameraViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDL-ci-E6F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvX-IJ-3hB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-pO-Yn6">
+                                        <rect key="frame" x="115" y="445.5" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="7zk-pu-zou"/>
+                                            <constraint firstAttribute="height" constant="90" id="XpA-Hh-AeB"/>
+                                        </constraints>
+                                        <state key="normal" image="ic-snap"/>
+                                        <connections>
+                                            <action selector="snapClicked:" destination="ovr-Jk-maU" eventType="touchUpInside" id="UI9-wc-Cfv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A09-bW-djF">
+                                        <rect key="frame" x="20" y="471" width="39" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="0cO-nX-Rg2"/>
+                                            <constraint firstAttribute="width" constant="39" id="b7D-hs-ijw"/>
+                                        </constraints>
+                                        <state key="normal" image="ic-flash-off"/>
+                                        <connections>
+                                            <action selector="flashClicked:" destination="ovr-Jk-maU" eventType="touchUpInside" id="XNd-tt-KqZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IMR-pO-Yn6" firstAttribute="centerY" secondItem="A09-bW-djF" secondAttribute="centerY" id="end-8b-ALx"/>
+                                    <constraint firstAttribute="bottom" secondItem="A09-bW-djF" secondAttribute="bottom" constant="58" id="fFp-fy-HaF"/>
+                                    <constraint firstItem="A09-bW-djF" firstAttribute="leading" secondItem="lvX-IJ-3hB" secondAttribute="leading" constant="20" id="k8M-1S-FGf"/>
+                                    <constraint firstItem="IMR-pO-Yn6" firstAttribute="centerX" secondItem="lvX-IJ-3hB" secondAttribute="centerX" id="zMg-xu-pNy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sVA-pz-90p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lvX-IJ-3hB" firstAttribute="top" secondItem="eDL-ci-E6F" secondAttribute="top" id="ImT-Oe-nPN"/>
+                            <constraint firstItem="lvX-IJ-3hB" firstAttribute="bottom" secondItem="eDL-ci-E6F" secondAttribute="bottom" id="bjc-ub-CyP"/>
+                            <constraint firstItem="lvX-IJ-3hB" firstAttribute="leading" secondItem="eDL-ci-E6F" secondAttribute="leading" id="ok8-Qk-VBe"/>
+                            <constraint firstItem="lvX-IJ-3hB" firstAttribute="trailing" secondItem="eDL-ci-E6F" secondAttribute="trailing" id="q4H-ng-TPs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="lvX-IJ-3hB" id="JLM-5L-cb4"/>
+                        <outlet property="flashBtn" destination="A09-bW-djF" id="5m5-kQ-KGh"/>
+                        <outlet property="snapBtn" destination="IMR-pO-Yn6" id="i3c-k9-Wlq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oF-3f-qas" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6168.75" y="1542.2535211267607"/>
         </scene>
         <!--Notif Trans View Controller-->
         <scene sceneID="mCf-nE-gcA">
@@ -652,21 +716,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHi-ue-4kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6169" y="789"/>
-        </scene>
-        <!--Succes View Controller-->
-        <scene sceneID="9RS-IY-lui">
-            <objects>
-                <viewController storyboardIdentifier="SuccesVC" id="c2E-Z1-ft5" customClass="SuccesViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T6b-UH-6xL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jK4-nf-QyY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NMo-xd-i9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8153" y="2373"/>
         </scene>
         <!--Detail Tips View Controller-->
         <scene sceneID="xIn-DH-ekI">
@@ -862,7 +911,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="0qb-vV-iGL">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bIa-9u-OBO" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="bIa-9u-OBO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mba-ki-YcG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3yh-8M-tzT">
@@ -1156,6 +1205,78 @@
             </objects>
             <point key="canvasLocation" x="3158" y="1707"/>
         </scene>
+        <!--Succes View Controller-->
+        <scene sceneID="c18-Hd-Gzn">
+            <objects>
+                <viewController storyboardIdentifier="SuccesVC" id="BFl-nU-vJN" customClass="SuccesViewController" customModule="TanamAja" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pef-9l-zvT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rsW-xp-hzV">
+                                <rect key="frame" x="36" y="183" width="248" height="202"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4A-ik-N96">
+                                        <rect key="frame" x="85.5" y="0.0" width="77" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="77" id="Jvj-6o-tih"/>
+                                            <constraint firstAttribute="height" constant="77" id="zAl-VL-Yet"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3S3-nm-2Pz">
+                                        <rect key="frame" x="0.0" y="87" width="248" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="248" id="gLP-jY-scR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrL-a2-Ufx">
+                                        <rect key="frame" x="0.0" y="125" width="248" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="248" id="6MD-E5-7YL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-Sr-xVF">
+                                        <rect key="frame" x="45" y="154" width="158" height="48"/>
+                                        <color key="backgroundColor" name="Green"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="cWQ-hC-4mF"/>
+                                            <constraint firstAttribute="width" constant="158" id="hBt-Wz-B53"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backPressed:" destination="BFl-nU-vJN" eventType="touchUpInside" id="Hck-Gg-JqA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlp-sp-Vcq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rsW-xp-hzV" firstAttribute="centerY" secondItem="pef-9l-zvT" secondAttribute="centerY" id="QlU-WN-Tjz"/>
+                            <constraint firstItem="rsW-xp-hzV" firstAttribute="centerX" secondItem="pef-9l-zvT" secondAttribute="centerX" id="xAf-PM-nx3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="ba4-Sr-xVF" id="ywp-R9-qlB"/>
+                        <outlet property="badgeImg" destination="D4A-ik-N96" id="c0m-8V-i6N"/>
+                        <outlet property="descLbl" destination="IrL-a2-Ufx" id="EAw-rB-JeE"/>
+                        <outlet property="titleLbl" destination="3S3-nm-2Pz" id="Pdp-Tm-c8S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWD-7P-Jck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8154" y="2380"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GoogleButton" width="80" height="80"/>
@@ -1166,6 +1287,7 @@
         <image name="edit" width="41" height="41"/>
         <image name="ic-bell" width="29" height="29"/>
         <image name="ic-close" width="25" height="25"/>
+        <image name="ic-flash-off" width="52" height="52"/>
         <image name="ic-home" width="21" height="23"/>
         <image name="ic-home-active" width="21" height="23"/>
         <image name="ic-mail" width="21" height="17"/>
@@ -1175,6 +1297,7 @@
         <image name="ic-profile-active" width="16.5" height="17"/>
         <image name="ic-reward" width="18" height="18"/>
         <image name="ic-reward-active" width="18" height="18"/>
+        <image name="ic-snap" width="120" height="120"/>
         <image name="ic-user" width="16" height="21"/>
         <image name="splashLogo" width="345" height="389"/>
         <namedColor name="Green">

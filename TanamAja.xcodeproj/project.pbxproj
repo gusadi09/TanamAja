@@ -29,6 +29,7 @@
 		EC2F66E425FE0CDF008987F8 /* DetailTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66E325FE0CDF008987F8 /* DetailTipsViewController.swift */; };
 		EC2F66E925FE5419008987F8 /* DetailSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */; };
 		EC2F66EF25FE5A3A008987F8 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */; };
+		EC2F66F425FE6C29008987F8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66F325FE6C29008987F8 /* CameraViewController.swift */; };
 		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
 		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
 		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
@@ -98,6 +99,7 @@
 		EC2F66E325FE0CDF008987F8 /* DetailTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTipsViewController.swift; sourceTree = "<group>"; };
 		EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSubmissionViewController.swift; sourceTree = "<group>"; };
 		EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
+		EC2F66F325FE6C29008987F8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */,
+				EC2F66F325FE6C29008987F8 /* CameraViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				EC1A892225F6360D00919EDD /* NotifTransViewController.swift in Sources */,
 				EC2384E025F5D34900788686 /* RewardViewController.swift in Sources */,
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
+				EC2F66F425FE6C29008987F8 /* CameraViewController.swift in Sources */,
 				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
 				EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */,
 				EC2F66DF25FDCC47008987F8 /* DetailNotifViewController.swift in Sources */,

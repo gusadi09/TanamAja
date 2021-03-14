@@ -19,6 +19,18 @@ class ProfileViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func setupUI() {
         profileImage.layer.borderWidth = 3
         profileImage.layer.masksToBounds = false
@@ -34,5 +46,18 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func editPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "toEdit", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as? EditProfileViewController
+        
+        if segue.identifier == "toEdit" {
+            if let img = profileImage.image, let nama = nameLbl.text, let phone = phoneLbl.text {
+                dest?.img = img
+                dest?.nama = nama
+                dest?.phone = phone
+            }
+        }
     }
 }

@@ -58,12 +58,17 @@ class HomeViewController: UIViewController {
         dTaskView.clipsToBounds = true
         dTaskView.layer.cornerRadius = 5
         dTaskView.layer.masksToBounds = false
-        
-        
-        
+      
         tabBarController?.tabBar.backgroundImage = UIImage()
         tabBarController?.tabBar.shadowImage = UIImage()
         tabBarController?.tabBar.backgroundColor = .white
+        
+        DispatchQueue.main.async {
+            var frame = self.dTaskTable.frame
+            frame.size.height = self.dTaskTable.contentSize.height
+            self.dTaskTable.frame = frame
+        }
+        
     }
     
     @objc func onRefresh() {
@@ -87,6 +92,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell!
     }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {

@@ -12,20 +12,19 @@
 		E4709C3EA54DD586610F8F41 /* Pods_TanamAja_TanamAjaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681960A18E6570164D7552D6 /* Pods_TanamAja_TanamAjaUITests.framework */; };
 		EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18225925F602EA00443B9D /* ProfileViewController.swift */; };
 		EC18226425F6071500443B9D /* NotifikasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18226325F6071500443B9D /* NotifikasiViewController.swift */; };
-		EC1A892225F6360D00919EDD /* NotifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A892025F6360D00919EDD /* NotifTableViewController.swift */; };
-		EC1A892325F6360D00919EDD /* NotifTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1A892125F6360D00919EDD /* NotifTableViewController.xib */; };
+		EC1A892225F6360D00919EDD /* NotifTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A892025F6360D00919EDD /* NotifTransViewController.swift */; };
 		EC1A892C25F639FA00919EDD /* NotifOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A892A25F639FA00919EDD /* NotifOtherViewController.swift */; };
-		EC1A892D25F639FA00919EDD /* NotifOtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1A892B25F639FA00919EDD /* NotifOtherViewController.xib */; };
+		EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A893425F6453800919EDD /* NotifTransTableViewCell.swift */; };
+		EC1A893725F6453800919EDD /* NotifTransTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1A893525F6453800919EDD /* NotifTransTableViewCell.xib */; };
+		EC1A893D25F6454800919EDD /* NotifOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A893B25F6454800919EDD /* NotifOtherTableViewCell.swift */; };
+		EC1A893E25F6454800919EDD /* NotifOtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1A893C25F6454800919EDD /* NotifOtherTableViewCell.xib */; };
+		EC1A897A25F661D000919EDD /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A897925F661D000919EDD /* EditProfileViewController.swift */; };
 		EC2384BD25F5BB5C00788686 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384BC25F5BB5C00788686 /* HomeViewController.swift */; };
 		EC2384C425F5BEF200788686 /* DailyTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384C225F5BEF200788686 /* DailyTaskTableViewCell.swift */; };
 		EC2384C525F5BEF200788686 /* DailyTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2384C325F5BEF200788686 /* DailyTaskTableViewCell.xib */; };
 		EC2384D225F5C90200788686 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */; };
 		EC2384DA25F5C90C00788686 /* TipsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2384D925F5C90C00788686 /* TipsCollectionViewCell.xib */; };
 		EC2384E025F5D34900788686 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384DF25F5D34900788686 /* RewardViewController.swift */; };
-		EC2384E925F5D58200788686 /* ExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384E725F5D58200788686 /* ExchangeTableViewCell.swift */; };
-		EC2384EA25F5D58200788686 /* ExchangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2384E825F5D58200788686 /* ExchangeTableViewCell.xib */; };
-		EC2384F025F5D59900788686 /* SubExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384EE25F5D59900788686 /* SubExchangeTableViewCell.swift */; };
-		EC2384F125F5D59900788686 /* SubExchangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2384EF25F5D59900788686 /* SubExchangeTableViewCell.xib */; };
 		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
 		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
 		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
@@ -77,20 +76,19 @@
 		D88C6BF52F45FDC8508D5206 /* Pods-TanamAja-TanamAjaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC18225925F602EA00443B9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC18226325F6071500443B9D /* NotifikasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiViewController.swift; sourceTree = "<group>"; };
-		EC1A892025F6360D00919EDD /* NotifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTableViewController.swift; sourceTree = "<group>"; };
-		EC1A892125F6360D00919EDD /* NotifTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifTableViewController.xib; sourceTree = "<group>"; };
+		EC1A892025F6360D00919EDD /* NotifTransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTransViewController.swift; sourceTree = "<group>"; };
 		EC1A892A25F639FA00919EDD /* NotifOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifOtherViewController.swift; sourceTree = "<group>"; };
-		EC1A892B25F639FA00919EDD /* NotifOtherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifOtherViewController.xib; sourceTree = "<group>"; };
+		EC1A893425F6453800919EDD /* NotifTransTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTransTableViewCell.swift; sourceTree = "<group>"; };
+		EC1A893525F6453800919EDD /* NotifTransTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifTransTableViewCell.xib; sourceTree = "<group>"; };
+		EC1A893B25F6454800919EDD /* NotifOtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifOtherTableViewCell.swift; sourceTree = "<group>"; };
+		EC1A893C25F6454800919EDD /* NotifOtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotifOtherTableViewCell.xib; sourceTree = "<group>"; };
+		EC1A897925F661D000919EDD /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		EC2384BC25F5BB5C00788686 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC2384C225F5BEF200788686 /* DailyTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskTableViewCell.swift; sourceTree = "<group>"; };
 		EC2384C325F5BEF200788686 /* DailyTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyTaskTableViewCell.xib; sourceTree = "<group>"; };
 		EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC2384D925F5C90C00788686 /* TipsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC2384DF25F5D34900788686 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
-		EC2384E725F5D58200788686 /* ExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTableViewCell.swift; sourceTree = "<group>"; };
-		EC2384E825F5D58200788686 /* ExchangeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeTableViewCell.xib; sourceTree = "<group>"; };
-		EC2384EE25F5D59900788686 /* SubExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubExchangeTableViewCell.swift; sourceTree = "<group>"; };
-		EC2384EF25F5D59900788686 /* SubExchangeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubExchangeTableViewCell.xib; sourceTree = "<group>"; };
 		EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAjaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				EC18225925F602EA00443B9D /* ProfileViewController.swift */,
+				EC1A897925F661D000919EDD /* EditProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -182,7 +181,7 @@
 			children = (
 				EC2384BC25F5BB5C00788686 /* HomeViewController.swift */,
 				EC18226325F6071500443B9D /* NotifikasiViewController.swift */,
-				EC1A892025F6360D00919EDD /* NotifTableViewController.swift */,
+				EC1A892025F6360D00919EDD /* NotifTransViewController.swift */,
 				EC1A892A25F639FA00919EDD /* NotifOtherViewController.swift */,
 			);
 			path = Home;
@@ -193,8 +192,8 @@
 			children = (
 				EC2384D925F5C90C00788686 /* TipsCollectionViewCell.xib */,
 				EC2384C325F5BEF200788686 /* DailyTaskTableViewCell.xib */,
-				EC2384E825F5D58200788686 /* ExchangeTableViewCell.xib */,
-				EC2384EF25F5D59900788686 /* SubExchangeTableViewCell.xib */,
+				EC1A893525F6453800919EDD /* NotifTransTableViewCell.xib */,
+				EC1A893C25F6454800919EDD /* NotifOtherTableViewCell.xib */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -202,9 +201,8 @@
 		EC2384CC25F5BEFE00788686 /* CellController */ = {
 			isa = PBXGroup;
 			children = (
-				EC2384EE25F5D59900788686 /* SubExchangeTableViewCell.swift */,
-				EC2384E725F5D58200788686 /* ExchangeTableViewCell.swift */,
-				EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */,
+				EC2F66DA25FDC5B1008987F8 /* TipsCell */,
+				EC2F66D625FDC5A8008987F8 /* NotifCell */,
 				EC2384CD25F5BF0B00788686 /* dailyTaskCell */,
 			);
 			path = CellController;
@@ -224,6 +222,23 @@
 				EC2384DF25F5D34900788686 /* RewardViewController.swift */,
 			);
 			path = Reward;
+			sourceTree = "<group>";
+		};
+		EC2F66D625FDC5A8008987F8 /* NotifCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC1A893425F6453800919EDD /* NotifTransTableViewCell.swift */,
+				EC1A893B25F6454800919EDD /* NotifOtherTableViewCell.swift */,
+			);
+			path = NotifCell;
+			sourceTree = "<group>";
+		};
+		EC2F66DA25FDC5B1008987F8 /* TipsCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */,
+			);
+			path = TipsCell;
 			sourceTree = "<group>";
 		};
 		ECD68E8325F44AA000A00EC5 = {
@@ -312,8 +327,6 @@
 				ECD68E9525F44AA000A00EC5 /* Main.storyboard */,
 				ECD68ED225F44BE000A00EC5 /* LaunchScreen */,
 				ECD68F2425F4D2A100A00EC5 /* MainView.storyboard */,
-				EC1A892125F6360D00919EDD /* NotifTableViewController.xib */,
-				EC1A892B25F639FA00919EDD /* NotifOtherViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,17 +505,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1A892325F6360D00919EDD /* NotifTableViewController.xib in Resources */,
 				ECD68E9C25F44AA100A00EC5 /* LaunchScreen.storyboard in Resources */,
 				EC2384DA25F5C90C00788686 /* TipsCollectionViewCell.xib in Resources */,
 				ECD68EE225F4ADF300A00EC5 /* GoogleService-Info.plist in Resources */,
 				ECD68F0525F4B7F900A00EC5 /* Poppins-Bold.ttf in Resources */,
-				EC2384F125F5D59900788686 /* SubExchangeTableViewCell.xib in Resources */,
-				EC2384EA25F5D58200788686 /* ExchangeTableViewCell.xib in Resources */,
-				EC1A892D25F639FA00919EDD /* NotifOtherViewController.xib in Resources */,
+				EC1A893E25F6454800919EDD /* NotifOtherTableViewCell.xib in Resources */,
 				ECD68F0F25F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */,
 				EC2384C525F5BEF200788686 /* DailyTaskTableViewCell.xib in Resources */,
 				ECD68E9925F44AA100A00EC5 /* Assets.xcassets in Resources */,
+				EC1A893725F6453800919EDD /* NotifTransTableViewCell.xib in Resources */,
 				ECD68E9725F44AA000A00EC5 /* Main.storyboard in Resources */,
 				ECD68F2525F4D2A100A00EC5 /* MainView.storyboard in Resources */,
 			);
@@ -638,14 +649,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1A892225F6360D00919EDD /* NotifTableViewController.swift in Sources */,
-				EC2384E925F5D58200788686 /* ExchangeTableViewCell.swift in Sources */,
+				EC1A892225F6360D00919EDD /* NotifTransViewController.swift in Sources */,
 				EC2384E025F5D34900788686 /* RewardViewController.swift in Sources */,
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
 				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
+				EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */,
 				EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */,
 				ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */,
-				EC2384F025F5D59900788686 /* SubExchangeTableViewCell.swift in Sources */,
+				EC1A897A25F661D000919EDD /* EditProfileViewController.swift in Sources */,
 				EC2384BD25F5BB5C00788686 /* HomeViewController.swift in Sources */,
 				ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */,
 				EC18226425F6071500443B9D /* NotifikasiViewController.swift in Sources */,
@@ -655,6 +666,7 @@
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
 				EC1A892C25F639FA00919EDD /* NotifOtherViewController.swift in Sources */,
 				ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */,
+				EC1A893D25F6454800919EDD /* NotifOtherTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

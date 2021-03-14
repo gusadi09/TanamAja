@@ -17,7 +17,7 @@ class NotifikasiViewController: UIViewController, CAPSPageMenuDelegate {
         super.viewDidLoad()
         
         setupUI()
-        pageMenu?.delegate = self
+        
         segmented()
     }
     
@@ -67,12 +67,15 @@ class NotifikasiViewController: UIViewController, CAPSPageMenuDelegate {
     func segmented() {
         var controllerArray : [UIViewController] = []
         
-        let controller : UIViewController = UIViewController(nibName: "NotifTableViewController", bundle: nil)
-        controller.title = "TRANSACTION"
-        controllerArray.append(controller)
-        let VC1 = UIViewController(nibName: "NotifOtherViewController", bundle: nil)
-        VC1.title = "OTHER"
-        controllerArray.append(VC1)
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "transaksiVC") as? NotifTransViewController
+        vc?.title = "TRANSACTION"
+        let vc2 = storyboard.instantiateViewController(identifier: "otherVC") as? NotifOtherViewController
+        vc2?.title = "OTHER"
+        
+        controllerArray.append(vc!)
+        controllerArray.append(vc2!)
         
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(0),
@@ -80,12 +83,17 @@ class NotifikasiViewController: UIViewController, CAPSPageMenuDelegate {
             .selectionIndicatorColor(UIColor(named: "Green")!),
             .unselectedMenuItemLabelColor(UIColor.black),
             .scrollMenuBackgroundColor(.white),
+            .menuMargin(20.0),
+            .menuHeight(40.0),
             .selectedMenuItemLabelColor(UIColor(named: "Green")!),
             .menuItemFont(UIFont(name: "Poppins-Regular", size: 16)!)
         ]
+        let navheight = (navigationController?.navigationBar.frame.height ?? 0) + UIApplication.shared.statusBarFrame.height
+        let frame = CGRect(x: 0, y: navheight, width: view.frame.width, height: view.frame.height)
         
-        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.height ?? 0.0) + 25 , width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: frame, pageMenuOptions: parameters)
         
+        pageMenu!.delegate = self
         self.view.addSubview(pageMenu!.view)
     }
 }

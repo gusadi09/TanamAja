@@ -40,8 +40,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.navigationBar.isHidden = true
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -90,7 +89,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = dTaskTable.dequeueReusableCell(withIdentifier: "dTaskCell", for: indexPath) as? DailyTaskTableViewCell
         
+        cell?.selectionStyle = .none
+        
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "DetailTaskVC") as? DetailSubmissionViewController
+        
+        vc?.titleTxt = "Plant an Anti-pollutant Plants"
+        
+        navigationController?.pushViewController(vc!, animated: true)
     }
     
 }
@@ -104,5 +115,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let items = tipsCollection.dequeueReusableCell(withReuseIdentifier: "tipsCell", for: indexPath) as? TipsCollectionViewCell
         
         return items!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "DetailTipsVC") as? DetailTipsViewController
+        
+        navigationController?.pushViewController(vc!, animated: true)
     }
 }

@@ -25,6 +25,10 @@
 		EC2384D225F5C90200788686 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */; };
 		EC2384DA25F5C90C00788686 /* TipsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2384D925F5C90C00788686 /* TipsCollectionViewCell.xib */; };
 		EC2384E025F5D34900788686 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2384DF25F5D34900788686 /* RewardViewController.swift */; };
+		EC2F66DF25FDCC47008987F8 /* DetailNotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66DE25FDCC47008987F8 /* DetailNotifViewController.swift */; };
+		EC2F66E425FE0CDF008987F8 /* DetailTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66E325FE0CDF008987F8 /* DetailTipsViewController.swift */; };
+		EC2F66E925FE5419008987F8 /* DetailSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */; };
+		EC2F66EF25FE5A3A008987F8 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */; };
 		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
 		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
 		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
@@ -90,6 +94,10 @@
 		EC2384D925F5C90C00788686 /* TipsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsCollectionViewCell.xib; sourceTree = "<group>"; };
 		EC2384DF25F5D34900788686 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAjaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2F66DE25FDCC47008987F8 /* DetailNotifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotifViewController.swift; sourceTree = "<group>"; };
+		EC2F66E325FE0CDF008987F8 /* DetailTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTipsViewController.swift; sourceTree = "<group>"; };
+		EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSubmissionViewController.swift; sourceTree = "<group>"; };
+		EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
 		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +191,9 @@
 				EC18226325F6071500443B9D /* NotifikasiViewController.swift */,
 				EC1A892025F6360D00919EDD /* NotifTransViewController.swift */,
 				EC1A892A25F639FA00919EDD /* NotifOtherViewController.swift */,
+				EC2F66DE25FDCC47008987F8 /* DetailNotifViewController.swift */,
+				EC2F66E325FE0CDF008987F8 /* DetailTipsViewController.swift */,
+				EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -239,6 +250,14 @@
 				EC2384D125F5C90200788686 /* TipsCollectionViewCell.swift */,
 			);
 			path = TipsCell;
+			sourceTree = "<group>";
+		};
+		EC2F66ED25FE5A27008987F8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		ECD68E8325F44AA000A00EC5 = {
@@ -310,6 +329,7 @@
 		ECD68ED025F44BBC00A00EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EC2F66ED25FE5A27008987F8 /* Other */,
 				EC18225825F602D600443B9D /* Profile */,
 				EC2384DE25F5D32F00788686 /* Reward */,
 				EC2384CC25F5BEFE00788686 /* CellController */,
@@ -654,15 +674,19 @@
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
 				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
 				EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */,
+				EC2F66DF25FDCC47008987F8 /* DetailNotifViewController.swift in Sources */,
 				EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */,
 				ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */,
 				EC1A897A25F661D000919EDD /* EditProfileViewController.swift in Sources */,
 				EC2384BD25F5BB5C00788686 /* HomeViewController.swift in Sources */,
+				EC2F66E925FE5419008987F8 /* DetailSubmissionViewController.swift in Sources */,
 				ECD68F5325F4DF0A00A00EC5 /* Checkmark.swift in Sources */,
 				EC18226425F6071500443B9D /* NotifikasiViewController.swift in Sources */,
 				EC2384C425F5BEF200788686 /* DailyTaskTableViewCell.swift in Sources */,
 				EC2384D225F5C90200788686 /* TipsCollectionViewCell.swift in Sources */,
 				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
+				EC2F66EF25FE5A3A008987F8 /* SuccesViewController.swift in Sources */,
+				EC2F66E425FE0CDF008987F8 /* DetailTipsViewController.swift in Sources */,
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
 				EC1A892C25F639FA00919EDD /* NotifOtherViewController.swift in Sources */,
 				ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */,

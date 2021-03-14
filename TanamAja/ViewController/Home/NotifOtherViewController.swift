@@ -26,6 +26,16 @@ class NotifOtherViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = otherTable.dequeueReusableCell(withIdentifier: "otherCell", for: indexPath) as? NotifOtherTableViewCell
         
+        cell?.selectionStyle = .none
+        
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(identifier: "DetailNotifVC") as? DetailNotifViewController
+        
+        present(vc!, animated: true, completion: nil)
     }
 }

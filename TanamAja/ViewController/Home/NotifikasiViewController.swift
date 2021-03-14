@@ -71,6 +71,7 @@ class NotifikasiViewController: UIViewController, CAPSPageMenuDelegate {
         
         let vc = storyboard.instantiateViewController(identifier: "transaksiVC") as? NotifTransViewController
         vc?.title = "TRANSACTION"
+        
         let vc2 = storyboard.instantiateViewController(identifier: "otherVC") as? NotifOtherViewController
         vc2?.title = "OTHER"
         

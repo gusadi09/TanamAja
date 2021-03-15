@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rewardCell" id="gTV-IL-0wX" customClass="RewardCollectionViewCell" customModule="TanamAja" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 88" translatesAutoresizingMaskIntoConstraints="NO" id="qqw-p4-zzO">
+                        <rect key="frame" x="0.0" y="3" width="170" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="109" id="LFB-nm-cxd"/>
+                            <constraint firstAttribute="width" constant="170" id="vNW-ii-snH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIq-pj-X6X">
+                        <rect key="frame" x="0.0" y="122" width="170" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxJ-n3-336">
+                        <rect key="frame" x="0.0" y="145" width="170" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="Green"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qqw-p4-zzO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="5sb-JO-4Cf"/>
+                <constraint firstItem="NxJ-n3-336" firstAttribute="top" secondItem="vIq-pj-X6X" secondAttribute="bottom" constant="3" id="I4s-sR-qIr"/>
+                <constraint firstAttribute="trailing" secondItem="NxJ-n3-336" secondAttribute="trailing" id="Tp7-We-j7K"/>
+                <constraint firstAttribute="bottom" secondItem="NxJ-n3-336" secondAttribute="bottom" constant="4" id="coZ-Yz-PD9"/>
+                <constraint firstItem="NxJ-n3-336" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g1t-yr-LIM"/>
+                <constraint firstItem="vIq-pj-X6X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hvD-yk-S9E"/>
+                <constraint firstItem="vIq-pj-X6X" firstAttribute="top" secondItem="qqw-p4-zzO" secondAttribute="bottom" constant="10" id="iv4-Uk-8jM"/>
+                <constraint firstItem="qqw-p4-zzO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oRJ-Y4-DW4"/>
+                <constraint firstAttribute="trailing" secondItem="vIq-pj-X6X" secondAttribute="trailing" id="r8X-yc-md6"/>
+                <constraint firstAttribute="trailing" secondItem="qqw-p4-zzO" secondAttribute="trailing" id="x4I-uQ-TlI"/>
+            </constraints>
+            <connections>
+                <outlet property="imageReward" destination="qqw-p4-zzO" id="oWD-GT-34s"/>
+                <outlet property="pointLbl" destination="NxJ-n3-336" id="dAs-Ub-juL"/>
+                <outlet property="titleLbl" destination="vIq-pj-X6X" id="T3q-px-dvM"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="51.5625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 88" width="680" height="456"/>
+        <namedColor name="Green">
+            <color red="0.36399999260902405" green="0.74400001764297485" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -6,57 +6,73 @@
 //
 
 import UIKit
-import ExpandableCell
+import PageMenu
 
-class RewardViewController: UIViewController {
-    @IBOutlet weak var exchangeTable: ExpandableTableView!
+class RewardViewController: UIViewController, CAPSPageMenuDelegate {
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    var pageMenu : CAPSPageMenu?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        exchangeTable.expandableDelegate = self
-        exchangeTable.animation = .automatic
+        segmented()
         
-        exchangeTable.register(UINib(nibName: "ExchangeTableViewCell", bundle: nil), forCellReuseIdentifier: "exchangeCell")
-        exchangeTable.register(UINib(nibName: "SubExchangeTableViewCell", bundle: nil), forCellReuseIdentifier: "subExCell")
-    }
-}
-
-extension RewardViewController: ExpandableDelegate {
-    func expandableTableView(_ expandableTableView: ExpandableTableView, heightsForExpandedRowAt indexPath: IndexPath) -> [CGFloat]? {
-        switch indexPath.section {
-        case 0:
-            return[297]
-        default:
-            return[297]
-        }
+        pageMenu?.delegate = self
     }
     
-    func expandableTableView(_ expandableTableView: ExpandableTableView, expandedCellsForRowAt indexPath: IndexPath) -> [UITableViewCell]? {
-        let subCell = expandableTableView.dequeueReusableCell(withIdentifier: "subExCell", for: indexPath) as? SubExchangeTableViewCell
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    func segmented() {
+        var controllerArray : [UIViewController] = []
         
-        switch indexPath.section {
-        case 0:
-            return[subCell!]
-        default:
-            return[subCell!]
-        }
-    }
-    
-    func expandableTableView(_ expandableTableView: ExpandableTableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 108
-    }
-    
-    func expandableTableView(_ expandableTableView: ExpandableTableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func expandableTableView(_ expandableTableView: ExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = expandableTableView.dequeueReusableCell(withIdentifier: "exchangeCell", for: indexPath) as? ExchangeTableViewCell
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
         
-        return cell!
-    }
-    
-    func expandableTableView(_ expandableTableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        return true
+        let vc = storyboard.instantiateViewController(identifier: "VoucherVC") as? VoucherViewController
+        vc?.parentNavigationController = self.navigationController
+        
+        vc?.title = "Voucher"
+        
+        let vc2 = storyboard.instantiateViewController(identifier: "MerchVC") as? MerchandiseViewController
+        vc2?.parentNavigationController = self.navigationController
+        
+        vc2?.title = "Merchandise"
+        
+        controllerArray.append(vc!)
+        controllerArray.append(vc2!)
+        
+        let parameters: [CAPSPageMenuOption] = [
+            .menuItemSeparatorWidth(0),
+            .useMenuLikeSegmentedControl(true),
+            .selectionIndicatorColor(UIColor(named: "Green")!),
+            .unselectedMenuItemLabelColor(UIColor.black),
+            .scrollMenuBackgroundColor(.white),
+            .menuMargin(20.0),
+            .menuHeight(40.0),
+            .selectedMenuItemLabelColor(UIColor(named: "Green")!),
+            .menuItemFont(UIFont(name: "Poppins-Regular", size: 16)!)
+        ]
+        let navheight = (navigationController?.navigationBar.frame.height ?? 0) + UIApplication.shared.statusBarFrame.height + titleLbl.frame.height
+        let frame = CGRect(x: 0, y: navheight, width: view.frame.width, height: view.frame.height)
+        
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: frame, pageMenuOptions: parameters)
+        
+        pageMenu!.delegate = self
+        self.view.addSubview(pageMenu!.view)
+        
+        pageMenu?.view.snp.makeConstraints({ (make) in
+            make.left.equalTo(self.view)
+            make.right.equalTo(self.view)
+            make.top.equalTo(self.titleLbl.snp.bottom).offset(10)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+        })
     }
 }

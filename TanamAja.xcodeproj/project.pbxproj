@@ -10,6 +10,13 @@
 		3C6C20B24BAA836FFA1A77AF /* Pods_TanamAja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3DB4EDD7A6635AE3D92DED /* Pods_TanamAja.framework */; };
 		8C18D5F744CE36BD53A76E1D /* Pods_TanamAjaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC25D5E2DC83E86C80B7F32A /* Pods_TanamAjaTests.framework */; };
 		E4709C3EA54DD586610F8F41 /* Pods_TanamAja_TanamAjaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681960A18E6570164D7552D6 /* Pods_TanamAja_TanamAjaUITests.framework */; };
+		EC04A62625FF0FC800899959 /* VoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04A62525FF0FC800899959 /* VoucherViewController.swift */; };
+		EC04A62B25FF0FD900899959 /* MerchandiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04A62A25FF0FD900899959 /* MerchandiseViewController.swift */; };
+		EC04A65A25FF9D1300899959 /* RewardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04A65825FF9D1300899959 /* RewardCollectionViewCell.swift */; };
+		EC04A65B25FF9D1300899959 /* RewardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC04A65925FF9D1300899959 /* RewardCollectionViewCell.xib */; };
+		EC04A66425FF9D2E00899959 /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04A66225FF9D2E00899959 /* StoreCollectionViewCell.swift */; };
+		EC04A66525FF9D2E00899959 /* StoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC04A66325FF9D2E00899959 /* StoreCollectionViewCell.xib */; };
+		EC04A68125FFB6DC00899959 /* ConfirmRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04A68025FFB6DC00899959 /* ConfirmRewardViewController.swift */; };
 		EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18225925F602EA00443B9D /* ProfileViewController.swift */; };
 		EC18226425F6071500443B9D /* NotifikasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18226325F6071500443B9D /* NotifikasiViewController.swift */; };
 		EC1A892225F6360D00919EDD /* NotifTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1A892025F6360D00919EDD /* NotifTransViewController.swift */; };
@@ -79,6 +86,13 @@
 		8F4E2A0623169128580266EC /* Pods-TanamAjaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAjaTests.release.xcconfig"; path = "Target Support Files/Pods-TanamAjaTests/Pods-TanamAjaTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB3DB4EDD7A6635AE3D92DED /* Pods_TanamAja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanamAja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88C6BF52F45FDC8508D5206 /* Pods-TanamAja-TanamAjaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; path = "Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC04A62525FF0FC800899959 /* VoucherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherViewController.swift; sourceTree = "<group>"; };
+		EC04A62A25FF0FD900899959 /* MerchandiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchandiseViewController.swift; sourceTree = "<group>"; };
+		EC04A65825FF9D1300899959 /* RewardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC04A65925FF9D1300899959 /* RewardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC04A66225FF9D2E00899959 /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC04A66325FF9D2E00899959 /* StoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC04A68025FFB6DC00899959 /* ConfirmRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRewardViewController.swift; sourceTree = "<group>"; };
 		EC18225925F602EA00443B9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC18226325F6071500443B9D /* NotifikasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiViewController.swift; sourceTree = "<group>"; };
 		EC1A892025F6360D00919EDD /* NotifTransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTransViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +221,8 @@
 				EC2384C325F5BEF200788686 /* DailyTaskTableViewCell.xib */,
 				EC1A893525F6453800919EDD /* NotifTransTableViewCell.xib */,
 				EC1A893C25F6454800919EDD /* NotifOtherTableViewCell.xib */,
+				EC04A65925FF9D1300899959 /* RewardCollectionViewCell.xib */,
+				EC04A66325FF9D2E00899959 /* StoreCollectionViewCell.xib */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -214,6 +230,8 @@
 		EC2384CC25F5BEFE00788686 /* CellController */ = {
 			isa = PBXGroup;
 			children = (
+				EC04A66225FF9D2E00899959 /* StoreCollectionViewCell.swift */,
+				EC04A65825FF9D1300899959 /* RewardCollectionViewCell.swift */,
 				EC2F66DA25FDC5B1008987F8 /* TipsCell */,
 				EC2F66D625FDC5A8008987F8 /* NotifCell */,
 				EC2384CD25F5BF0B00788686 /* dailyTaskCell */,
@@ -233,6 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				EC2384DF25F5D34900788686 /* RewardViewController.swift */,
+				EC04A62525FF0FC800899959 /* VoucherViewController.swift */,
+				EC04A62A25FF0FD900899959 /* MerchandiseViewController.swift */,
+				EC04A68025FFB6DC00899959 /* ConfirmRewardViewController.swift */,
 			);
 			path = Reward;
 			sourceTree = "<group>";
@@ -536,7 +557,9 @@
 				ECD68F0F25F4B81500A00EC5 /* Poppins-Regular.ttf in Resources */,
 				EC2384C525F5BEF200788686 /* DailyTaskTableViewCell.xib in Resources */,
 				ECD68E9925F44AA100A00EC5 /* Assets.xcassets in Resources */,
+				EC04A66525FF9D2E00899959 /* StoreCollectionViewCell.xib in Resources */,
 				EC1A893725F6453800919EDD /* NotifTransTableViewCell.xib in Resources */,
+				EC04A65B25FF9D1300899959 /* RewardCollectionViewCell.xib in Resources */,
 				ECD68E9725F44AA000A00EC5 /* Main.storyboard in Resources */,
 				ECD68F2525F4D2A100A00EC5 /* MainView.storyboard in Resources */,
 			);
@@ -673,14 +696,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1A892225F6360D00919EDD /* NotifTransViewController.swift in Sources */,
+				EC04A66425FF9D2E00899959 /* StoreCollectionViewCell.swift in Sources */,
 				EC2384E025F5D34900788686 /* RewardViewController.swift in Sources */,
 				ECD68F2B25F4D32200A00EC5 /* LoginViewController.swift in Sources */,
 				EC2F66F425FE6C29008987F8 /* CameraViewController.swift in Sources */,
 				ECD68F5825F4DFBC00A00EC5 /* DesignableTextField.swift in Sources */,
+				EC04A62B25FF0FD900899959 /* MerchandiseViewController.swift in Sources */,
 				EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */,
+				EC04A65A25FF9D1300899959 /* RewardCollectionViewCell.swift in Sources */,
 				EC2F66DF25FDCC47008987F8 /* DetailNotifViewController.swift in Sources */,
 				EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */,
 				ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */,
+				EC04A62625FF0FC800899959 /* VoucherViewController.swift in Sources */,
 				EC1A897A25F661D000919EDD /* EditProfileViewController.swift in Sources */,
 				EC2384BD25F5BB5C00788686 /* HomeViewController.swift in Sources */,
 				EC2F66E925FE5419008987F8 /* DetailSubmissionViewController.swift in Sources */,
@@ -690,6 +717,7 @@
 				EC2384D225F5C90200788686 /* TipsCollectionViewCell.swift in Sources */,
 				ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */,
 				EC2F66EF25FE5A3A008987F8 /* SuccesViewController.swift in Sources */,
+				EC04A68125FFB6DC00899959 /* ConfirmRewardViewController.swift in Sources */,
 				EC2F66E425FE0CDF008987F8 /* DetailTipsViewController.swift in Sources */,
 				ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */,
 				EC1A892C25F639FA00919EDD /* NotifOtherViewController.swift in Sources */,

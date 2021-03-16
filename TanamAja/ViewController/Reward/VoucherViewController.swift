@@ -27,9 +27,9 @@ class VoucherViewController: UIViewController {
         
         layout.scrollDirection = .vertical
         layout.sectionInset.top = 15
-        layout.sectionInset.left = 15
-        layout.sectionInset.right = 15
-        layout.sectionInset.bottom = 45
+        layout.sectionInset.left = 10
+        layout.sectionInset.right = 10
+        layout.sectionInset.bottom = 35
         
         voucherCV.collectionViewLayout = layout
         
@@ -61,7 +61,7 @@ extension VoucherViewController: UICollectionViewDelegateFlowLayout, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             return CGSize(width: 170, height: 165)
-        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "MainView", bundle: nil)

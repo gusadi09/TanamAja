@@ -37,6 +37,7 @@
 		EC2F66E925FE5419008987F8 /* DetailSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */; };
 		EC2F66EF25FE5A3A008987F8 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */; };
 		EC2F66F425FE6C29008987F8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F66F325FE6C29008987F8 /* CameraViewController.swift */; };
+		ECC2C36226006A3E009E1C7E /* TanamStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C36126006A3E009E1C7E /* TanamStoreViewController.swift */; };
 		ECD68E9025F44AA000A00EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */; };
 		ECD68E9225F44AA000A00EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */; };
 		ECD68E9425F44AA000A00EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD68E9325F44AA000A00EC5 /* ViewController.swift */; };
@@ -114,6 +115,7 @@
 		EC2F66E825FE5419008987F8 /* DetailSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSubmissionViewController.swift; sourceTree = "<group>"; };
 		EC2F66EE25FE5A3A008987F8 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
 		EC2F66F325FE6C29008987F8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		ECC2C36126006A3E009E1C7E /* TanamStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamStoreViewController.swift; sourceTree = "<group>"; };
 		ECD68E8C25F44AA000A00EC5 /* TanamAja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanamAja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD68E8F25F44AA000A00EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD68E9125F44AA000A00EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +286,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		ECC2C36026006A27009E1C7E /* TanamStore */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2C36126006A3E009E1C7E /* TanamStoreViewController.swift */,
+			);
+			path = TanamStore;
+			sourceTree = "<group>";
+		};
 		ECD68E8325F44AA000A00EC5 = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +363,7 @@
 		ECD68ED025F44BBC00A00EC5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ECC2C36026006A27009E1C7E /* TanamStore */,
 				EC2F66ED25FE5A27008987F8 /* Other */,
 				EC18225825F602D600443B9D /* Profile */,
 				EC2384DE25F5D32F00788686 /* Reward */,
@@ -453,6 +464,7 @@
 				ECD68E8925F44AA000A00EC5 /* Frameworks */,
 				ECD68E8A25F44AA000A00EC5 /* Resources */,
 				197ACB22663E3F5B291142B3 /* [CP] Embed Pods Frameworks */,
+				3C4DCFD884253FA3F03C97DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -491,6 +503,7 @@
 				ECD68EAA25F44AA200A00EC5 /* Frameworks */,
 				ECD68EAB25F44AA200A00EC5 /* Resources */,
 				61F7CF4EB8DFF5CAD3359624 /* [CP] Embed Pods Frameworks */,
+				2D38F80B70B62FF5128E8102 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -627,6 +640,40 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2D38F80B70B62FF5128E8102 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TanamAja-TanamAjaUITests/Pods-TanamAja-TanamAjaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4DCFD884253FA3F03C97DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TanamAja/Pods-TanamAja-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		61F7CF4EB8DFF5CAD3359624 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,6 +751,7 @@
 				EC04A62B25FF0FD900899959 /* MerchandiseViewController.swift in Sources */,
 				EC1A893625F6453800919EDD /* NotifTransTableViewCell.swift in Sources */,
 				EC04A65A25FF9D1300899959 /* RewardCollectionViewCell.swift in Sources */,
+				ECC2C36226006A3E009E1C7E /* TanamStoreViewController.swift in Sources */,
 				EC2F66DF25FDCC47008987F8 /* DetailNotifViewController.swift in Sources */,
 				EC18225A25F602EA00443B9D /* ProfileViewController.swift in Sources */,
 				ECD68F8025F5277B00A00EC5 /* RegisterViewController.swift in Sources */,

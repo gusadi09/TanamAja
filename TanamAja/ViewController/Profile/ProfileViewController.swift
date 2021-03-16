@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var nameLbl: UILabel!
@@ -13,6 +15,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var pointsLbl: UILabel!
     @IBOutlet weak var logoutBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var belumDibayarBtn: UIButton!
+    @IBOutlet weak var dikirimBtn: UIButton!
+    @IBOutlet weak var pesananSelesaiBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +50,27 @@ class ProfileViewController: UIViewController {
         logoutBtn.layer.masksToBounds = false
     }
     
+    @IBAction func orderDonePressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func dikirimPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func notPayPressed(_ sender: UIButton) {
+    }
+    
     @IBAction func editPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "toEdit", sender: self)
+    }
+    
+    @IBAction func logoutPressed(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

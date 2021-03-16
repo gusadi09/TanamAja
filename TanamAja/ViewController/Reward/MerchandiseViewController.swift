@@ -27,8 +27,8 @@ class MerchandiseViewController: UIViewController {
         
         layout.scrollDirection = .vertical
         layout.sectionInset.top = 15
-        layout.sectionInset.left = 15
-        layout.sectionInset.right = 15
+        layout.sectionInset.left = 10
+        layout.sectionInset.right = 10
         layout.sectionInset.bottom = 45
         
         merchCV.collectionViewLayout = layout
